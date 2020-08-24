@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		491E36C12056525F006E163E /* bensound-energy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 491E36C02056525F006E163E /* bensound-energy.mp3 */; };
+		49916A6020560D9B00283C1E /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49916A5F20560D9B00283C1E /* AudioManager.swift */; };
+		499ED1D3204FBD2700153D38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499ED1D2204FBD2700153D38 /* AppDelegate.swift */; };
+		499ED1D5204FBD2700153D38 /* EqualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499ED1D4204FBD2700153D38 /* EqualizerViewController.swift */; };
+		499ED1DA204FBD2700153D38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 499ED1D9204FBD2700153D38 /* Assets.xcassets */; };
+		499ED1DD204FBD2700153D38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499ED1DB204FBD2700153D38 /* LaunchScreen.storyboard */; };
+		49A3B5D2204FE24700202C46 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A3B5D0204FE24700202C46 /* AVKit.framework */; };
+		49A3B5D3204FE24700202C46 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A3B5D1204FE24700202C46 /* AVFoundation.framework */; };
+		8400C67D24EFE1DB0026BC5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8400C67B24EFE1DB0026BC5B /* Main.storyboard */; };
+		8400C67F24EFF5B30026BC5B /* band.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8400C67E24EFF5B30026BC5B /* band.wav */; };
+		8400C68124EFF6750026BC5B /* piano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8400C68024EFF6750026BC5B /* piano.mp3 */; };
+		8400C68524F0047F0026BC5B /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8400C68424F0047F0026BC5B /* guitar.wav */; };
+		8400C68724F246790026BC5B /* CompletionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400C68624F246790026BC5B /* CompletionHandler.swift */; };
+		84B3AB6524F39969007CE30C /* SpectrumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3AB6424F39969007CE30C /* SpectrumView.swift */; };
+		84B3AB6724F399B8007CE30C /* RealtimeAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3AB6624F399B8007CE30C /* RealtimeAnalyzer.swift */; };
+		84B3AB8B24F3C435007CE30C /* EqualizerEffectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3AB8A24F3C435007CE30C /* EqualizerEffectTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84B3AB8D24F3C436007CE30C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 499ED1C7204FBD2700153D38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 499ED1CE204FBD2700153D38;
+			remoteInfo = EqualizerEffect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		491E36C02056525F006E163E /* bensound-energy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-energy.mp3"; sourceTree = "<group>"; };
+		49916A5F20560D9B00283C1E /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		499ED1CF204FBD2700153D38 /* EqualizerEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EqualizerEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		499ED1D2204FBD2700153D38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		499ED1D4204FBD2700153D38 /* EqualizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualizerViewController.swift; sourceTree = "<group>"; };
+		499ED1D9204FBD2700153D38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		499ED1DC204FBD2700153D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		499ED1DE204FBD2700153D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49A3B5D0204FE24700202C46 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		49A3B5D1204FE24700202C46 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8400C67C24EFE1DB0026BC5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8400C67E24EFF5B30026BC5B /* band.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = band.wav; sourceTree = "<group>"; };
+		8400C68024EFF6750026BC5B /* piano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piano.mp3; sourceTree = "<group>"; };
+		8400C68424F0047F0026BC5B /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar.wav; sourceTree = "<group>"; };
+		8400C68624F246790026BC5B /* CompletionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionHandler.swift; sourceTree = "<group>"; };
+		84B3AB6424F39969007CE30C /* SpectrumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumView.swift; sourceTree = "<group>"; };
+		84B3AB6624F399B8007CE30C /* RealtimeAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeAnalyzer.swift; sourceTree = "<group>"; };
+		84B3AB8824F3C435007CE30C /* EqualizerEffectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EqualizerEffectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B3AB8A24F3C435007CE30C /* EqualizerEffectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualizerEffectTests.swift; sourceTree = "<group>"; };
+		84B3AB8C24F3C436007CE30C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		499ED1CC204FBD2700153D38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A3B5D2204FE24700202C46 /* AVKit.framework in Frameworks */,
+				49A3B5D3204FE24700202C46 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B3AB8524F3C435007CE30C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49916A5D20560D6E00283C1E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8400C67B24EFE1DB0026BC5B /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		49916A5E20560D8900283C1E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				49916A5F20560D9B00283C1E /* AudioManager.swift */,
+				8400C68624F246790026BC5B /* CompletionHandler.swift */,
+				84B3AB6624F399B8007CE30C /* RealtimeAnalyzer.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		499ED1C6204FBD2700153D38 = {
+			isa = PBXGroup;
+			children = (
+				499ED1D1204FBD2700153D38 /* EqualizerEffect */,
+				84B3AB8924F3C435007CE30C /* EqualizerEffectTests */,
+				499ED1D0204FBD2700153D38 /* Products */,
+				49A3B5CF204FE24700202C46 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		499ED1D0204FBD2700153D38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				499ED1CF204FBD2700153D38 /* EqualizerEffect.app */,
+				84B3AB8824F3C435007CE30C /* EqualizerEffectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		499ED1D1204FBD2700153D38 /* EqualizerEffect */ = {
+			isa = PBXGroup;
+			children = (
+				499ED1D2204FBD2700153D38 /* AppDelegate.swift */,
+				499ED1DB204FBD2700153D38 /* LaunchScreen.storyboard */,
+				499ED1D9204FBD2700153D38 /* Assets.xcassets */,
+				49A3B5DE204FF1E700202C46 /* Music */,
+				49916A5E20560D8900283C1E /* Utils */,
+				84B3AB6924F3A3B6007CE30C /* View */,
+				84B3AB6824F3A348007CE30C /* ViewController */,
+				49916A5D20560D6E00283C1E /* Storyboard */,
+				499ED1DE204FBD2700153D38 /* Info.plist */,
+			);
+			path = EqualizerEffect;
+			sourceTree = "<group>";
+		};
+		49A3B5CF204FE24700202C46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49A3B5D1204FE24700202C46 /* AVFoundation.framework */,
+				49A3B5D0204FE24700202C46 /* AVKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49A3B5DE204FF1E700202C46 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				8400C67E24EFF5B30026BC5B /* band.wav */,
+				8400C68424F0047F0026BC5B /* guitar.wav */,
+				8400C68024EFF6750026BC5B /* piano.mp3 */,
+				491E36C02056525F006E163E /* bensound-energy.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		84B3AB6824F3A348007CE30C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				499ED1D4204FBD2700153D38 /* EqualizerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		84B3AB6924F3A3B6007CE30C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84B3AB6424F39969007CE30C /* SpectrumView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84B3AB8924F3C435007CE30C /* EqualizerEffectTests */ = {
+			isa = PBXGroup;
+			children = (
+				84B3AB8A24F3C435007CE30C /* EqualizerEffectTests.swift */,
+				84B3AB8C24F3C436007CE30C /* Info.plist */,
+			);
+			path = EqualizerEffectTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		499ED1CE204FBD2700153D38 /* EqualizerEffect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 499ED1F7204FBD2700153D38 /* Build configuration list for PBXNativeTarget "EqualizerEffect" */;
+			buildPhases = (
+				499ED1CB204FBD2700153D38 /* Sources */,
+				499ED1CC204FBD2700153D38 /* Frameworks */,
+				499ED1CD204FBD2700153D38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EqualizerEffect;
+			productName = EqualizerEffect;
+			productReference = 499ED1CF204FBD2700153D38 /* EqualizerEffect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84B3AB8724F3C435007CE30C /* EqualizerEffectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B3AB8F24F3C436007CE30C /* Build configuration list for PBXNativeTarget "EqualizerEffectTests" */;
+			buildPhases = (
+				84B3AB8424F3C435007CE30C /* Sources */,
+				84B3AB8524F3C435007CE30C /* Frameworks */,
+				84B3AB8624F3C435007CE30C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84B3AB8E24F3C436007CE30C /* PBXTargetDependency */,
+			);
+			name = EqualizerEffectTests;
+			productName = EqualizerEffectTests;
+			productReference = 84B3AB8824F3C435007CE30C /* EqualizerEffectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		499ED1C7204FBD2700153D38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "한승진";
+				TargetAttributes = {
+					499ED1CE204FBD2700153D38 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					84B3AB8724F3C435007CE30C = {
+						CreatedOnToolsVersion = 11.6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 499ED1CE204FBD2700153D38;
+					};
+				};
+			};
+			buildConfigurationList = 499ED1CA204FBD2700153D38 /* Build configuration list for PBXProject "EqualizerEffect" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 499ED1C6204FBD2700153D38;
+			productRefGroup = 499ED1D0204FBD2700153D38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				499ED1CE204FBD2700153D38 /* EqualizerEffect */,
+				84B3AB8724F3C435007CE30C /* EqualizerEffectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		499ED1CD204FBD2700153D38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8400C68524F0047F0026BC5B /* guitar.wav in Resources */,
+				8400C67D24EFE1DB0026BC5B /* Main.storyboard in Resources */,
+				8400C67F24EFF5B30026BC5B /* band.wav in Resources */,
+				499ED1DD204FBD2700153D38 /* LaunchScreen.storyboard in Resources */,
+				499ED1DA204FBD2700153D38 /* Assets.xcassets in Resources */,
+				8400C68124EFF6750026BC5B /* piano.mp3 in Resources */,
+				491E36C12056525F006E163E /* bensound-energy.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B3AB8624F3C435007CE30C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		499ED1CB204FBD2700153D38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49916A6020560D9B00283C1E /* AudioManager.swift in Sources */,
+				499ED1D5204FBD2700153D38 /* EqualizerViewController.swift in Sources */,
+				84B3AB6724F399B8007CE30C /* RealtimeAnalyzer.swift in Sources */,
+				84B3AB6524F39969007CE30C /* SpectrumView.swift in Sources */,
+				8400C68724F246790026BC5B /* CompletionHandler.swift in Sources */,
+				499ED1D3204FBD2700153D38 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B3AB8424F3C435007CE30C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B3AB8B24F3C435007CE30C /* EqualizerEffectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84B3AB8E24F3C436007CE30C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 499ED1CE204FBD2700153D38 /* EqualizerEffect */;
+			targetProxy = 84B3AB8D24F3C436007CE30C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		499ED1DB204FBD2700153D38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				499ED1DC204FBD2700153D38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8400C67B24EFE1DB0026BC5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8400C67C24EFE1DB0026BC5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		499ED1F5204FBD2700153D38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		499ED1F6204FBD2700153D38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		499ED1F8204FBD2700153D38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9U8C9WC6ZJ;
+				INFOPLIST_FILE = EqualizerEffect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hansjin.EqualizerEffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		499ED1F9204FBD2700153D38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9U8C9WC6ZJ;
+				INFOPLIST_FILE = EqualizerEffect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hansjin.EqualizerEffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84B3AB9024F3C436007CE30C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EqualizerEffectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Tester.EqualizerEffectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EqualizerEffect.app/EqualizerEffect";
+			};
+			name = Debug;
+		};
+		84B3AB9124F3C436007CE30C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EqualizerEffectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Tester.EqualizerEffectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EqualizerEffect.app/EqualizerEffect";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		499ED1CA204FBD2700153D38 /* Build configuration list for PBXProject "EqualizerEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499ED1F5204FBD2700153D38 /* Debug */,
+				499ED1F6204FBD2700153D38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		499ED1F7204FBD2700153D38 /* Build configuration list for PBXNativeTarget "EqualizerEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499ED1F8204FBD2700153D38 /* Debug */,
+				499ED1F9204FBD2700153D38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B3AB8F24F3C436007CE30C /* Build configuration list for PBXNativeTarget "EqualizerEffectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B3AB9024F3C436007CE30C /* Debug */,
+				84B3AB9124F3C436007CE30C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 499ED1C7204FBD2700153D38 /* Project object */;
+}
